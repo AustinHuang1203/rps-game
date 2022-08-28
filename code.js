@@ -1,3 +1,10 @@
+
+// event listerners
+const btn = document.getElementById("button");
+btn.addEventListener("click",play_round);
+
+
+
 // rock = 7, paper = 8, scissors = 9
 
 function getComputerChoice () {
@@ -7,8 +14,8 @@ function getComputerChoice () {
 // draw = 0, player win = 1, computer win = 2
 function playervcomputer (x){
     const y = getComputerChoice();
-    if (x === y){
-       ;
+    if (x == y){
+       return 0;
     }
     else if (x>y){
         return 1;
@@ -23,16 +30,15 @@ function play_round(){
     let result = playervcomputer(choice);
 
     if (result == 0){
-        return "Draw!";
+        document.getElementById("demo").innerHTML = "Draw!";
     }
     else if (result == 1){
-        p_score = p_score + 1;
-        return "Player Wins Round!";
+        document.getElementById("demo").innerHTML = "Player Wins Round!";
     }
-    else {
-        c_score = c_score + 1;
-        return "Computer Wins Round!";
+    else if (result == 2){
+        document.getElementById("demo").innerHTML = "Computer Wins Round!";
     }
+    return;
 }
 
 function init_game(n){
@@ -70,3 +76,7 @@ function play_game(n,i,j){
     else {return play_game(n,p_score,c_score);}
 
 }
+
+
+
+

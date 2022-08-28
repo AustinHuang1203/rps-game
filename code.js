@@ -1,7 +1,7 @@
 
 // event listerners
-//const btn = document.getElementById("button");
-//btn.addEventListener("click",play_round);
+const btn4 = document.getElementById("button4");
+btn4.addEventListener("click",reset);
 const btn1 = document.getElementById("button1");
 btn1.addEventListener("click",play_round1);
 const btn2 = document.getElementById("button2");
@@ -19,6 +19,15 @@ let computer_score = 0
 function getComputerChoice () {
     return random_index = Math.floor(Math.random()*3) + 7;
 }
+
+function reset(){
+    player_score = 0;
+    computer_score = 0;
+    document.getElementById("pscore").innerHTML = `Player Score: ${player_score}`;
+    document.getElementById("cscore").innerHTML = `Computer Score: ${computer_score}`;
+    return;
+}
+
 
 // draw = 0, player win = 1, computer win = 2
 function playervcomputer (x){

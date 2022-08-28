@@ -101,6 +101,7 @@ function play_round3(){
     return;
 }
 
+/*
 function play_round(){
     let choice = prompt("Choose your tool!")
     let result = playervcomputer(choice);
@@ -154,5 +155,4 @@ function play_game(n,i,j){
 }
 
 
-
-
+*/

@@ -1,10 +1,85 @@
+
+/* buttons */
 .button {
     background-color: #4CAF50; /* Green */
-    border: none;
+    border-color: chocolate;
+    border-width: 5px;
     color: white;
-    padding: 15px 32px;
+    padding: 30px 64px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 25px;
   }
+
+/* flexboxes */
+.heading {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.background1 {
+    display:flex;
+    background-image: url(images/background.jpg);
+    flex-wrap: wrap;
+    padding-bottom:300px;
+}
+
+.options1 {
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 40px;
+    width:100%;
+}
+
+.reset1{
+    display:flex;
+    justify-content: center;
+    width:100%
+}
+
+.result1{
+    display:flex;
+    justify-content:center;
+    width:100%
+}
+
+.score1{
+    display:flex;
+    justify-content:space-evenly;
+    width:100%;
+}
+
+.score2{
+    display:flex;
+    justify-content:center;
+    padding-right:20px;
+    padding-left:20px;
+}
+
+/* fonts */
+.font1{
+    font-size:70px;
+    color:white;
+}
+
+.font2{
+    font-size:50px;
+    color:white;
+}
+
+.font3{
+    font-size:40px;
+    color:white;
+}
+
+
+
+
+
+
+
+

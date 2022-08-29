@@ -17,7 +17,20 @@ let computer_score = 0
 // rock = 7, paper = 8, scissors = 9
 
 function getComputerChoice () {
-    return random_index = Math.floor(Math.random()*3) + 7;
+    const answer = random_index = Math.floor(Math.random()*3) + 7;
+    if (answer == 7){
+        document.getElementById("choice2").innerHTML = "Computer Choice: Rock";
+        document.getElementById("choice4").innerHTML = '<img src="images/stone.svg" width= "400" height=auto alt="stone">';
+    }
+    else if(answer == 8){
+        document.getElementById("choice2").innerHTML = "Computer Choice: Paper";
+        document.getElementById("choice4").innerHTML = '<img src="images/paper.svg" width= "400" height="300" alt="paper">';
+    }
+    else{
+        document.getElementById("choice2").innerHTML = "Computer Choice: Scissors";
+        document.getElementById("choice4").innerHTML = '<img src="images/scissors.svg" width= "400" height=300 alt="scissors">';
+    }
+    return answer;
 }
 
 function reset(){
@@ -45,8 +58,10 @@ function playervcomputer (x){
         return 2;
     }
 }
-
+// document.getElementById("choice1").innerHTML = '<img src="images/stone.svg" alt="stone"> Player Choice: Rock';
 function play_round1(){
+    document.getElementById("choice1").innerHTML = "Player Choice: Rock";
+    document.getElementById("choice3").innerHTML = '<img src="images/stone.svg" width= "400" height=auto alt="stone">';
     let result = playervcomputer(7);
 
     if (result == 0){
@@ -65,6 +80,8 @@ function play_round1(){
     return;
 }
 function play_round2(){
+    document.getElementById("choice1").innerHTML = "Player Choice: Paper";
+    document.getElementById("choice3").innerHTML = '<img src="images/paper.svg" width= "400" height="300" alt="paper">';
     let result = playervcomputer(8);
 
     if (result == 0){
@@ -83,6 +100,8 @@ function play_round2(){
     return;
 }
 function play_round3(){
+    document.getElementById("choice1").innerHTML = "Player Choice: Scissors";
+    document.getElementById("choice3").innerHTML = '<img src="images/scissors.svg" width= "400" height=300 alt="scissors">';
     let result = playervcomputer(9);
 
     if (result == 0){

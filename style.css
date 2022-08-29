@@ -28,6 +28,39 @@
     padding-bottom:300px;
 }
 
+.tool1 {
+    display:flex;
+    justify-content:center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    width:100%;
+}
+
+.tool2{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    max-width:500px;
+    padding-bottom:30px;
+}
+
+.tool3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width:600px;
+    padding-right:100px;
+    padding-left:100px;
+    padding-bottom:50px;
+}
+
+.picture1{
+    display:flex;
+    justify-content:center;
+    width:410px;
+    height:310px;
+}
+
 .options1 {
     display:flex;
     justify-content:space-around;

@@ -79,7 +79,7 @@
     display:flex;
     justify-content:center;
     width:100%;
-    max-width:550px;
+    max-width:620px;
     padding-bottom:30px;
 }
 
@@ -87,7 +87,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width:600px;
+    max-width:630px;
     padding-right:100px;
     padding-left:100px;
     padding-bottom:50px;
@@ -133,6 +133,20 @@
     padding-left:20px;
 }
 
+.credits1{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:100%;
+    padding-top:150px;
+}
+
+.credits2{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
 /* fonts */
 .font1{
     font-size:90px;
@@ -154,11 +168,26 @@
 .font3{
     font-size:50px;
     color:rgb(95, 146, 240);
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .font4{
     font-size:50px;
     color:rgb(245, 85, 85);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.font5{
+    font-size:35px;
+    color:white;
+    font-family:Times, Times New Roman, serif;
+}
+
+.font6{
+    font-size:35px;
+    color:rgb(121, 121, 241);
+    font-family:Times, Times New Roman, serif;
+    text-decoration:underline;
 }
 
 
